@@ -3,8 +3,6 @@ const search = document.querySelector('input')
 const errorParagraph = document.querySelector('#error-paragraph')
 const weatherParagraph = document.querySelector('#weather-paragraph')
 
-console.log('Client side javascript file is loaded!')
-
 function callWeatherApi(location) {
     fetch(`/weather?address=${location}`).then((response) => {
         response.json().then((data) => {
